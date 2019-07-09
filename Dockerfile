@@ -6,7 +6,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app
-RUN pip install -y pipenv
+RUN pip install pipenv
 COPY Pipfile ./
 RUN pipenv install -y
 COPY . .
