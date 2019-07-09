@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>结果</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'magic_number/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="h-100">
+    <div class="container text-center" style="height: 80%; color: aliceblue;">
+        <div>
+            <h3>快来测一测，看看谁是和你</h3>
+            <h2><i class="golden_font">100%</i>相似的女富豪</h2>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static  'magic_number/' %}{{ pic_name }}" alt="Image">
+
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <img src="{% static 'magic_number/sushi.png' %}" alt="Image">
+            </div>
+        </div>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-4">
+                <h2 class="golden_font">{{ cele_name }}</h2>
+            </div>
+            <div class="col-4">
+                <h1 class="golden_font">VS</h1>
+            </div>
+            <div class="col-4">
+                <h2 class="golden_font">{{ name }}</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row align-items-center">
+            <div class="col-4">
+                <h6>{{ desc }}</h6>
+            </div>
+            <div class="col-4">
+                <h4>相似度</h4>
+                <h4 class="golden_font">100%</h4>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+        <br>
+        <div class="row align-items-center">
+            <div class="col">
+                <h3>
+                    生命数字同为 <i class="golden_font">{{ life_number }}</i>
+                </h3>
+                <h3>
+                    天赋数字同为：<i class="golden_font">{{ talent_number1 }}</i>
+                    和
+                    <i class="golden_font">{{ talent_number2 }}</i>
+                </h3>
+            </div>
+        </div>
+        <br>
+    </div>
+    <footer class="footer container-fluid">
+        <div class="row" style="height: 100%">
+            <div class="col-7 align-self-center">
+                <h4 style="text-align: center">梦想还是要有的 <br> 万一实现了呢</h4>
+            </div>
+            <div class="col-5 align-self-center">
+                <img src="../../static/magic_number/sushi.png" alt="qrcode">
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    background: orangered!important;
+}
+
+li a {
+    color: green;
+}
+
+img {
+    width: 25vw;
+}
+
+.golden_font{
+    font-weight: bold;
+    color: gold;
+}
+
+footer {
+    background: white;
+    height: 20vh;
+}
