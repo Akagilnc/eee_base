@@ -8,7 +8,7 @@ RUN apt-get update \
 WORKDIR /usr/src/app
 RUN pip install pipenv
 COPY Pipfile ./
-RUN pipenv install -y
+RUN pipenv install && pipenv shell
 COPY . .
 
 EXPOSE 8000
