@@ -8,7 +8,7 @@ RUN apt-get update \
 WORKDIR /usr/src/app
 RUN pip install pipenv
 COPY Pipfile ./
-RUN pipenv install --system --deploy --ignore-pipfile
+RUN pipenv install --system --deploy
 COPY . .
 
 EXPOSE 8000
